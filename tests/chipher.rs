@@ -14,7 +14,7 @@ mod chipher_tests {
         println!("Generated key: {:?}", aes_key);
 
         let text = "hello world";
-        let mut d = text.as_bytes().to_vec();
+        let d = text.as_bytes().to_vec();
         let od = Chipher::encrypt(d, &aes_key).unwrap();
         println!("Encrypted data: {:?}", od);
 
